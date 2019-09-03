@@ -8,7 +8,7 @@ using Sy.Core.Entities;
 
 namespace Sy.DataAccess
 {
-    class StokDbContext : DbContext
+    public class StokDbContext : DbContext
     {
         public StokDbContext()
             : base ("name = MyCon")
