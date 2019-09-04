@@ -1,4 +1,5 @@
-﻿using Sy.Forms.Auth;
+﻿using Sy.Business.Repository;
+using Sy.Forms.Auth;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -8,14 +9,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Sy.Core.Entities;
 
 namespace Sy.Forms
 {
     public partial class Form1 : Form
     {
+        private Repository<Product, Guid> _productrepo;
+
         public Form1()
         {
             InitializeComponent();
+            _productrepo = new Repository<Product, Guid>();
         }
 
         private void btnGirisYap_Click(object sender, EventArgs e)
