@@ -22,5 +22,7 @@ namespace Sy.Core.Entities
         public decimal UnitPrice { get; set; }
 
         public int CriticStock { get; set; } = 10;
+
+        public virtual ICollection<ProductStockAction> ProductStockActions { get; set; } = new HashSet<ProductStockAction>();
     }
 }

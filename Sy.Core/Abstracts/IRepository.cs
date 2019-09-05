@@ -5,6 +5,7 @@ using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 using Sy.Core.Abstracts;
+using Sy.Core.Entities;
 
 namespace Sy.Core.Abstracts
 {

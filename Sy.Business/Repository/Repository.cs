@@ -40,6 +40,8 @@ namespace Sy.Business.Repository
             return entity.Id;
         }
 
+
+
         public IQueryable<TEntity> Query(Expression<Func<TEntity, bool>> predicate = null)
         {
            return predicate == null ? _table : _table.Where(predicate);
